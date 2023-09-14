@@ -44,7 +44,7 @@ console.log(`totalPopulation of world is ${totalPopulation}`);
 console.log("5)countries with us dollar as currency");
 
 let usDollar = data.filter((v,i,a)=>{
-   return data[i].currencies.USD.name == "United States dollar";
+   return data[i].currencies?.USD?.name == "United States dollar";
 });
 console.log(usDollar);
 }
